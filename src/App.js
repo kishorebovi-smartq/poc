@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Login from './components/login';
 import { Provider } from 'react-redux';
 import store from './store';
