@@ -10,6 +10,7 @@
     color: white;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #4D618E;
   }
 
   .main {
@@ -22,21 +23,40 @@
     .container {
       display: grid;
       padding: 30px;
-      height: 20rem;
+      min-height: 20rem;
       width: 70%;
       background-color: white;
       border-radius: 20px;
       box-shadow: 0px 30px 36px #557da526;
+      gap: 1.5rem;
 
       .input {
-        height: 46px;
-        width: 100%;
-        border: 1px solid #c6c6c6;
-        border-radius: 5px;
+        display: grid;
+        gap: 0.5rem;
+        .inputField {
+          height: 46px;
+          width: 100%;
+          border: 1px solid #c6c6c6;
+          border-radius: 5px;
+        }
+        .inputField::placeholder {
+          color: #c6c6c6;
+          padding-left: 10px;
+        }
       }
-      .input::placeholder {
-        color: #c6c6c6;
-        padding-left: 10px;
+      .btnWrap {
+        margin-top: 1.5rem;
+        display: grid;
+        place-items: center;
+        .btn {
+          height: 3rem;
+          width: 10rem;
+          border: 1px solid var(--unnamed-color-43afff);
+          background: #43afff 0% 0% no-repeat padding-box;
+          border: 1px solid #43afff;
+          border-radius: 5px;
+          color: white;
+        }
       }
     }
   }
