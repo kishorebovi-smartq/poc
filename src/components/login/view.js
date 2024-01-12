@@ -1,7 +1,6 @@
-import { Login } from "."
+import './style.module.scss';
+const View = () => {
+  return <></>;
+};
 
-const test = () => {
-    return (
-        <Login test={'hello'} />
-    )
-}
+export default View;

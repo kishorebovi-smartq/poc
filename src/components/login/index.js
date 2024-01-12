@@ -1,12 +1,7 @@
- const Login = ({ usename, userType, ...props } ) => {
+import View from './view';
 
-
-    return(
-
-        <div>
-            {props.test}
-        </div>
-    )
-}
+const Login = () => {
+  return <View />;
+};
 
 export default Login;
