@@ -1,0 +1,30 @@
+.jobCard{
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    
+    .name{
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(59, 59, 168);
+    }
+
+    .jobRole{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(59, 59, 168);
+    }
+
+    .description{
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(59, 59, 168);
+    }
+
+    .location{
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(59, 59, 168);
+    }
+}

@@ -11,7 +11,6 @@ const LandingPageView = ({cardData, loginClickHandler}) => {
           <span>My</span>
           <span className={styles.blueText}>Jobs</span>
         </h1>
-        <button className={styles.loginButton}>Login/SignUp</button>
       </div>
       <div className={styles.content}>
         <div className={styles.heading}>

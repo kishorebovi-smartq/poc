@@ -1,13 +1,27 @@
 import styles from "./styles.module.scss";
 
-const DashboardView = ({posts}) => {
+import JobCard from "./job-card";
+
+const DashboardView = ({ posts, logoutClickHandler }) => {
   return (
-    <>
-      <div className={styles.headContainer}>
-        Hello Boopathiraja {`(VP Here - Guess who am I?)`}
+    <div className={styles.container} >
+      <div className={styles.header}>
+        <h1>
+          <span>My</span>
+          <span className={styles.blueText}>Jobs</span>
+        </h1>
+
+        <button className={styles.logoutButton} onClick={logoutClickHandler} >Logout</button>
       </div>
-      <div className={styles.headContainer.user}>Logo</div>
-    </>
+
+      <div className={styles.jobCardContainer} >
+        {
+          posts.map((post, index) => (
+            <JobCard key={index} post={post} />
+          ))
+        }
+      </div>
+    </div>
   );
 };
 

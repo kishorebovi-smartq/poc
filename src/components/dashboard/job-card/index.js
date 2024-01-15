@@ -1,12 +1,8 @@
 import JobCardView from "./view";
 
-const JobCard = () => {
+const JobCard = ({post}) => {
   
-  return (
-    <>
-      <JobCardView />
-    </>
-  );
+  return <JobCardView post={post} />
 };
 
 export default JobCard;
