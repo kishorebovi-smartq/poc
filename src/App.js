@@ -1,11 +1,12 @@
-import './App.scss';
-import Login from './components/login';
-import { Provider } from 'react-redux';
-import store from './store';
+import "./App.scss";
+import { Provider } from "react-redux";
+import store from "./store";
+import Dashboard from "./components/dashboard";
+
 function App() {
   return (
     <Provider store={store}>
-      <Login />
+      <Dashboard />
     </Provider>
   );
 }
