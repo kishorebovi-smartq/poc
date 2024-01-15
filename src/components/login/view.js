@@ -1,5 +1,5 @@
 import styles from './style.module.scss';
-const View = () => {
+const View = ({loginClickHandler}) => {
   return (
     <>
       <div className={styles.wrapper}>
@@ -26,7 +26,7 @@ const View = () => {
               />
             </div>
             <div className={styles.btnWrap}>
-              <button className={styles.btn}>Login</button>
+              <button className={styles.btn} onClick={loginClickHandler} >Login</button>
             </div>
           </div>
         </main>

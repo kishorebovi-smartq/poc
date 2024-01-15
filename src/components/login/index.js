@@ -1,17 +1,14 @@
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import View from './view';
 
-import PostService from '../../api/post-service'
-
 const Login = () => {
+  const navigate = useNavigate();
+  const loginClickHandler = () => {
+    navigate("/dashboard");
+  }
 
-    useEffect(() => {
-        PostService.get().then((response) => {
-            console.log(response)
-        })
-    }, [])
-    return <View />;
+  return <View loginClickHandler={loginClickHandler} />;
 };
 
 export default Login;

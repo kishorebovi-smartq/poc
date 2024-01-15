@@ -1,11 +1,12 @@
-import "./App.css";
+import "./App.scss";
 import { Provider } from "react-redux";
 import store from "./store";
-import LandingPage from "./components/landing/view";
+
+import Router from "./utils/router";
 function App() {
   return (
     <Provider store={store}>
-      <LandingPage />
+      <Router />
     </Provider>
   );
 }

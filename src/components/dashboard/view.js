@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-const DashboardView = () => {
+const DashboardView = ({posts}) => {
   return (
     <>
       <div className={styles.headContainer}>

@@ -1,5 +1,7 @@
-import LandingPageCard from "./cards/view";
+import {useNavigate} from 'react-router-dom'
 import styles from "./style.module.scss";
+
+import LandingPageView from "./view";
 
 export const cardData = [
   {
@@ -22,19 +24,19 @@ export const cardData = [
   },
 ];
 
-export const Cards = ({ data = [] }) => {
+
+const LandingPage = () => {
+  const navigate = useNavigate()
+
+  const loginClickHandler = () => {
+    navigate('/login')
+  }
   return (
-    <div className={styles.cardContainer}>
-      {data.map((cardDetail) => {
-        const { title = "", description = "", id = "" } = cardDetail || {};
-        return (
-          <LandingPageCard
-            cardTitle={title}
-            cardDescription={description}
-            key={id}
-          />
-        );
-      })}
+    <div className={styles.landing}>
+      <LandingPageView cardData={cardData} loginClickHandler={loginClickHandler} />
     </div>
   );
-};
+}
+
+export default LandingPage
+

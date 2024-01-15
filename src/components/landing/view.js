@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./style.module.scss";
 import LandingImage from "./assets/landingImage.avif";
-import { Cards, cardData } from "./index";
+import Cards  from "./cards";
 
-const LandingPage = () => {
+const LandingPageView = ({cardData, loginClickHandler}) => {
   return (
     <div className={styles.landing}>
       <div className={styles.header}>
@@ -21,7 +21,7 @@ const LandingPage = () => {
               <span>My</span>
               <span className={styles.blueText}>Jobs</span>
             </h1>
-            <button>Get Started</button>
+            <button onClick={loginClickHandler} >Get Started</button>
           </div>
           <div>
             <img src={LandingImage} alt="dummy" width="550px" height="300px" />
@@ -36,4 +36,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default LandingPageView;
