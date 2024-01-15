@@ -1,11 +1,11 @@
-import './App.css';
-import Login from './components/login';
-import { Provider } from 'react-redux';
-import store from './store';
+import "./App.css";
+import { Provider } from "react-redux";
+import store from "./store";
+import LandingPage from "./components/landing/view";
 function App() {
   return (
     <Provider store={store}>
-      <Login />
+      <LandingPage />
     </Provider>
   );
 }
